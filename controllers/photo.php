@@ -249,7 +249,7 @@ class PHOTO_CTRL_Photo extends OW_ActionController
             "title" => "photo+meta_title_photo_view",
             "description" => "photo+meta_desc_photo_view",
             "keywords" => "photo+meta_keywords_photo_view",
-            "vars" => array( "user_name" => BOL_UserService::getInstance()->findUserById($album->userId)->username, "photo_id" => $photo->id ),
+            "vars" => array( "user_name" => BOL_UserService::getInstance()->findUserById($album->userId)->userName, "photo_id" => $photo->id ),
             "image" => $imageUrl
         );
 
